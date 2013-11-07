@@ -20,23 +20,23 @@ class wechatCallbackapiTest
 {
 	//验证 signature 是否有效
 	public function valid()
-    {
-        $echoStr = $_GET["echostr"];
+	{
+		$echoStr = $_GET["echostr"];
 
-        //valid signature , option
+		//valid signature , option
 		//验证通过，返回 $echoStr
-        if($this->checkSignature()){
-        	echo $echoStr;
-        	exit;
-        }
-    }
+		if($this->checkSignature()){
+			echo $echoStr;
+			exit;
+		}
+	}
 		
 	private function checkSignature()
 	{
 		//分别为 GET 请求中三个参数的内容
-        $signature = $_GET["signature"];
-        $timestamp = $_GET["timestamp"];
-        $nonce = $_GET["nonce"];	
+		$signature = $_GET["signature"];
+		$timestamp = $_GET["timestamp"];
+		$nonce = $_GET["nonce"];	
         
 		//定义的TOKEN的值
 		$token = TOKEN;
