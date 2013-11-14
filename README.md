@@ -13,3 +13,7 @@
 2. **扫描添加**    
 你还可以通过扫描下面的二维码进行添加：
 
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/hazirguo/weixin_linux_inside/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
